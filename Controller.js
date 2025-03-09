@@ -1,7 +1,7 @@
 import { GridModel } from './GridModel.js';
 import { SaveModel } from './SaveModel.js';
 import { SummaryModel } from './SummaryModel.js';
-import { View } from './view.js';
+import { View } from './View.js';
 
 export class Controller {
     constructor() {
