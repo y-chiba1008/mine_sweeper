@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <p><span class="label">点数：</span><span class="value" id="point"></span></p>
+            <p><span class="label">旗：</span><span class="value" id="flagCount"></span></p>
+            <p><span class="label">ライフ：</span><span class="value" id="life"></span></p>
+            <p><span class="label">クリア行数：</span><span class="value" id="clearRowCount"></span></p>
+            <button id="reset">リセット</button>
+            <button id="save">セーブ</button>
+            <button id="load">ロード</button>
+        </div>
+        <table id="main_table"></table>
+    </div>
+
+    <div id="game_over" class="hidden">
+        <p>GAME OVER</p>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
