@@ -62,7 +62,10 @@ export class GridModel extends EventPublisher {
 
     shiftGird() {
         let shiftRowCount = 0;
-        while (this._grid[0].every((cell) => cell.isMine || cell.isOpened)) {
+        while (
+            this._grid[0].every((cell) => cell.isMine || cell.isOpened) &&
+            this._grid[1].every((cell) => cell.isMine || cell.isOpened)
+        ) {
             this._grid.shift();
             this._pushNewRow();
             shiftRowCount++;
